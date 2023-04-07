@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "052a9e12-36e8-4aca-85d6-9217dd89d6fe",
+		"name": "TEST AJA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userController",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Uid\": 7,\r\n    \"Username\": \"MMMM\",\r\n    \"City\": \"Jakarta\",\r\n    \"Friend\": 3\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/addMultiple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"addMultiple"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
