@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  nodeexpressmysqlcrudapp:
+    image: nodeexpressmysqlcrudapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+      - 3306:3306
+      - 8081:8081
+    network_mode: "host"  
