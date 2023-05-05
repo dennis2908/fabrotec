@@ -1,10 +1,10 @@
 "user strict";
 
 const connection = {
-  host: "host.docker.internal",
-  user: "root",
-  password: "abc123",
-  database: "crud2",
+  host: "mysqldb",
+  user: "admin",
+  password: "letmein",
+  database: "patientsdb",
 };
 
 module.exports = connection;
